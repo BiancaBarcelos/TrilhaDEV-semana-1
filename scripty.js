@@ -7,7 +7,6 @@ function preencheCampo(event) {
     let idade = document.getElementById("idade").value;
     let profissao =  document.getElementById("profissao").value;
     let fmt = document.getElementById("fmt").value;
-    console.log(nome, idade, profissao, fmt)
     
     if (nome != "" && idade != "" && profissao != "" && fmt != "") {
       document.getElementById("frase").innerHTML =
@@ -21,10 +20,7 @@ function preencheCampo(event) {
         fmt === "" ? camposVazios.push(" Qual seu objetivo no Floripa Mais Tec?"):"";
 
         alert(`Está faltando preencher o(s) campo(s) ${camposVazios}`);
-    }
-
-
-    
+    } 
   }
 
 
