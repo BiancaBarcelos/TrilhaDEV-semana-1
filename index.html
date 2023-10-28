@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrilhaDEV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+    <!-- Questão 1 -->
+    <section>
+        <div class="titulo">
+            <h1>Bianca Barcelos</h1>
+            <h2>Web Developer</h2>
+        </div>
+        <div class="flex informacoes">
+            <div>
+                <h2 class="alinhaEnd">Sobre Mim</h2>
+                <div class="listas">
+                    <ul>
+                        <li>Data de nascimento</li>
+                        <li>Telefone</li>
+                        <li>e-Mail</li>
+                    </ul>
+                    <ul class="tirarMarcacao">
+                        <li>:</li>
+                        <li>:</li>
+                        <li>:</li>
+                    </ul>
+                    <ul class="tirarMarcacao alinhaEnd">
+                        <li>25 de dezembro de 1997</li>
+                        <li>+55 (48) 9 9110-9898</li>
+                        <li>biancassbarcelos@gmail.com</li>
+                    </ul>
+                </div>
+    
+            </div>
+            <div id="linha"></div>
+            <div>
+                <h2>Formação</h2>
+                <div class="listas">
+                    <ol>
+                        <li>EEBIMT - Ensino Médio</li>
+                        <li>LAB365 - Floripa Mais Tec</li>
+                        <li>SENAC - Graduação Sistemas para Internet</li>
+                    </ol>
+                    <ol class="tirarMarcacao">
+                        <li>:</li>
+                        <li>:</li>
+                        <li>:</li>
+                    </ol>
+                    <ol class="tirarMarcacao alinhaEnd">
+                        <li>jan/2013 - dez/2015</li>
+                        <li>out/2023 - set/2024</li>
+                        <li>abr/2023 - set/2025</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Questão 2 -->
+    <section id="sessao2">
+        <h2>Quero te conhecer melhor, preencha os campos abaixo:</h2>
+        <form action="">
+            <fieldset>
+                <label for="nome">Nome:</label>
+                <input id="nome" type="text" name="nome" placeholder="Escreva o seu nome">
+            </fieldset>
+            <fieldset>
+                <label for="idade">Idade:</label>
+                <input id="idade" type="number" name="idade" placeholder="Qual a sua idade?">
+            </fieldset>
+            <fieldset>
+                <label for="profissao">Profissão:</label>
+                <input id="profissao" type="text" name="profissao" placeholder="No que tu trabalha?">
+            </fieldset>
+            <fieldset>
+                <label for="fmt">Qual seu objetivo no Floripa Mais Tec?:</label>
+                <input id="fmt" type="text" name="fmt" placeholder="Me conta mais">
+            </fieldset>
+            <button onclick="preencheCampo(event)" type="submit" >Enviar</button>
+        </form>        
+        
+        <h2 id="frase"></h2>
+        
+        <div class="linha"></div>
+        <h2 class="mensagem">Abra o console e veja a minha resposta!</h2>
+    </section>
+   
+    <!-- Questão 3 -->
+    <section id="sessao3">
+        <form action="">
+            <fieldset>
+                <label for="idade_cliente">Idade:</label>
+                <input id="idade_cliente" type="number" nome="idade_cliente" placeholder="Qual a sua idade?">
+            </fieldset>
+            <button onclick="preencherIdade(event)" type="submit" >Enviar</button>
+
+        </form>
+        <h2 id="idadeCliente"></h2>
+    </section>
+
+    <!-- Questão 4 -->
+    <section id="sessao4">
+        <form action="">
+            <h2>Estou indo para a escola, preciso levar esses itens:</h2>
+            <fieldset>
+                <input id="mochila" type="checkbox" value="Mochila" nome="mochila">
+                <label for="mochila">Mochila</label>
+            </fieldset>
+            <fieldset>
+                <input id="caderno" type="checkbox" value="Caderno" nome="caderno">
+                <label for="caderno">Caderno</label>
+            </fieldset>
+            <fieldset>
+                <input id="caneta" type="checkbox" value="Caneta" nome="caneta">
+                <label for="caneta">Caneta</label>
+            </fieldset>
+            <button onclick="validaItens(event)" type="submit" >Enviar</button>
+        </form>
+        <h2 id="irEscola"></h2>
+    </section>
+
+    <!-- Logo-->
+    <div class="logo_bianca">
+        <img src="assets/logo.png" alt="">
+        <p>Bianca Barcelos</p>
+    </div>
+
+    <script src="scripty.js"></script>
+</body>
+</html>

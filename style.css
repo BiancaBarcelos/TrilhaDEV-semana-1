@@ -1,0 +1,154 @@
+body {
+    background-color: #0E1C2B;
+    color: antiquewhite;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+section {
+    border-bottom: 1px solid #BC2649;
+    margin: 30px;
+}
+
+/* Questão 1 */
+.titulo {
+    text-align: center;
+}
+.titulo h1 {
+    margin-bottom: 0;
+
+}
+h2 {
+    margin-top: 0;
+    font-weight: 100;
+}
+.alinhaEnd {
+    text-align: end;
+}
+#linha {
+    border-bottom: 1px solid #BC2649;
+    width: 130px;
+    height: 0;
+    transform: rotate(90deg);
+    align-self: center;
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.informacoes{
+    margin-top: 80px;
+}
+.listas {
+    display: flex;
+    flex-direction: row;
+}
+.listas ul li{
+    margin-bottom: 10px;
+}
+.listas ol li{
+    margin-bottom: 10px;
+}
+.tirarMarcacao li{
+    list-style-type: none;
+}
+
+/* Questão 2 */
+#sessao2 h2 {
+    text-align: center;
+}
+fieldset {
+    border: 0;
+    width: 45%;
+}
+label {
+    display: block;
+    text-align: start;
+}
+form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+input {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    margin-top: 10px;
+    padding-left: 8px;
+}
+form button {
+    margin: 30px;
+    background-color: #BC2649;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: antiquewhite;
+    height: 32px;
+}
+form button:hover {
+    background-color: #8a3246;
+    cursor: pointer;
+}
+.linha {
+    border: 1px solid #8a3246;
+    margin-bottom: 20px;
+}
+.mensagem {
+    text-align: center;
+    padding: 5px;
+    background-color: #1f2d3b;
+}
+
+/* Questão 3 */
+
+#sessao3 h2 {
+    text-align: center;
+}
+#sessao3 form button {
+    margin: 0;
+    margin-bottom: 10px;
+    
+}
+#sessao3 form {
+    gap: 10px;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+/* Questão 4 */
+
+#sessao4 h2 {
+    text-align: center;
+}
+#sessao4 label {
+    display: inline;
+}
+#sessao4 fieldset {
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+#sessao4 input {
+    margin-top: 0;
+}
+
+.logo_bianca {
+    gap: 5px;
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    color: antiquewhite;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.logo_bianca img{
+    width: 40px;
+    filter: brightness(300);
+}
